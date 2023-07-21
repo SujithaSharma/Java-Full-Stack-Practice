@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallex</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="innerdiv">
+        <img class="backimage" src="./images/mountain.jpg" />
+        <img class="frontimage" src="./images/trees.png" />
+        <h1 class="heading">Parallex Demo</h1>
+      </div>
+      <div class="gardenpara">
+        My Garden is my favourite part of my house. I can spend hours in my
+        garden without getting bored. It makes me come alive and I just love
+        that feeling. It is my mother who maintains the garden at our place just
+        as she takes care of various other household chores. She is a huge
+        nature lover and it was her idea to build a beautiful garden at home
+        even though there isn’t a lot of space here. Most of the people in our
+        neighbourhood have converted this place in their house into car parking
+        area or have covered the place to build a small room. But my mother
+        chose to convert this small piece of land into a lovely garden. My
+        Garden is my favourite part of my house. I can spend hours in my garden
+        without getting bored. It makes me come alive and I just love that
+        feeling. It is my mother who maintains the garden at our place just she
+        takes care of various other household chores. She is a huge nature lover
+        and it was her idea to build a beautiful garden at home even though
+        there isn’t a lot of space here. Most of the people in our neighbourhood
+        have converted this place in their house into car area or have covered
+        the place to build a small room
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  h1 {
+    text-align: center;
+    background: aqua;
+  }
+  .wrapper {
+    height: 100vh;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .gardenpara {
+    background: brown;
+  }
+  .innerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100%;
+  }
+  .backimage,
+  .frontimage {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .backimage {
+    transform: translateZ(-15px) scale(2.5);
+  }
+  .frontimage {
+    transform: translateZ(-5px) scale(1.5);
+    top: 15cm;
+  }
+</style>
