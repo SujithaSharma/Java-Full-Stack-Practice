@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallex</title>
+  </head>
+  <body>
+    <div class="wholediv">
+      <div class="movablebox">
+        <img src="./images/mountain1.jpg" class="mountain1" />
+        <div class="heading">This is Parallex !</div>
+      </div>
+      <div class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at
+        minima suscipit. Ipsa dolorem officiis amet eligendi, quisquam inventore
+        aspernatur facere autem voluptatibus, in quos quidem ullam, rerum
+        consequuntur maxime! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Molestias at minima suscipit. Ipsa dolorem officiis amet eligendi,
+        quisquam inventore aspernatur facere autem voluptatibus, in quos quidem
+        ullam, rerum consequuntur maxime! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias at minima suscipit. Ipsa dolorem officiis
+        amet eligendi, quisquam inventore aspernatur facere autem voluptatibus,
+        in quos quidem ullam, rerum consequuntur maxime! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Molestias at minima suscipit. Ipsa
+        dolorem officiis amet eligendi, quisquam inventore aspernatur facere
+        autem voluptatibus, in quos quidem ullam, rerum consequuntur maxime!
+      </div>
+      <img src="./images/lavendertree.jpg" class="mountain2" />
+    </div>
+  </body>
+</html>
+<style>
+  .mountain1 {
+    width: 100%;
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .mountain2 {
+    width: 100%;
+    position: absolute;
+    top: 20cm;
+  }
+  .heading {
+    font-size: 50px;
+    color: black;
+    text-shadow: 3px 3px 3px red;
+    text-align: center;
+  }
+  .para {
+    font-size: 25px;
+    background: black;
+    color: white;
+    position: absolute;
+    z-index: 3;
+  }
+  .movablebox {
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+  .wholediv {
+    height: 100vh;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+</style>
