@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoppingCart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Cart.css"></link>
+    <script src="Cart.js"></script>
+  </head>
+  <body>
+    <div style="display: flex;flex-direction: row;margin-left: 5cm;">
+    <div class="card">
+      <img class="card-img-top" src="../images/laptop.png" />
+      <div class="card-body">
+        <div class="hidden-id">1</div>
+        <p class="item-name center">
+          HP ZBook Firefly 12th Gen Intel Core i7-1255U 40.6 cm
+        </p>
+        <div class="priceandquantity"><div><h5><span>Rs.</span><span class="item-price center">1000</span></h5></div>
+      <div><h5 class="item-quantity center">0</h5></div></div>
+        <div class="center">
+          <button class="fa-minus btn btn-success"onclick="removeProduct()">-</button
+          ><a href="#" class="btn btn-success add-to-cart" onclick="addToCart(1)">Add to Cart</a
+          ><button class="fa-plus btn btn-success"onclick="addProduct()">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Mobile.png" />
+        <div class="card-body">
+          <div class="hidden-id">2</div>
+          <p class="item-name center">
+            OnePlus Nord CE 3 Lite 5G (8GB RAM, 128GB)
+          </p>
+          <div class="priceandquantity"><div><h5><span>Rs.</span><span class="item-price center">500</span></h5></div>
+      <div><h5 class="item-quantity center">0</h5></div></div>
+          <div class="center">
+            <button class="fa-minus btn btn-success"onclick="removeProduct()">-</button
+            ><a href="#" class="btn btn-success add-to-cart" onclick="addToCart(2)">Add to Cart</a
+            ><button class="fa-plus btn btn-success"onclick="addProduct()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="../images/pendrive.png" />
+        <div class="card-body">
+          <div class="hidden-id">3</div>
+          <p class="item-name center">
+            SanDisk Ultra Shift USB 3.0 128 GB Pen Drive(Black)
+          </p>
+          <div class="priceandquantity"><div><h5><span>Rs.</span><span class="item-price center">600</span></h5></div>
+          <div><h5 class="item-quantity center">0</h5></div></div>
+          <div class="center">
+            <button class="fa-minus btn btn-success"onclick="removeProduct()">-</button
+            ><a href="#" class="btn btn-success add-to-cart" onclick="addToCart(3)">Add to Cart</a
+            ><button class="fa-plus btn btn-success"onclick="addProduct()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="../images/watch.png" />
+        <div class="card-body">
+          <div class="hidden-id">4</div>
+          <p class="item-name center">
+            Samsung Galaxy Watch 4 Classic LTE Smart Watch(Black)
+          </p>
+          <div class="priceandquantity"><div><h5><span>Rs.</span><span class="item-price center">300</span></div>
+      <div><h5 class="item-quantity center">0</h5></div></div>
+          <div class="center">
+            <button class="fa-minus btn btn-success"onclick="removeProduct()">-</button
+            ><a href="#" class="btn btn-success add-to-cart" onclick="addToCart(4)">Add to Cart</a
+            ><button class="fa-plus btn btn-success"onclick="addProduct()">+</button>
+          </div>
+        </div>
+    </div>
+      </div>
+    <table class="table table-hover table-bordered" id="carttable">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Product</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total Price</th>
+          </tr>
+        </thead> 
+      </table>
+  </body>
+</html>
