@@ -1,0 +1,59 @@
+.formPageMainDiv {
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.formPage {
+    border-right: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    width: 450px;
+    height: 500px;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+input:focus {
+    border: 1px solid skyblue;
+    box-shadow: 0px 0px 3px rgb(79, 169, 205);
+}
+
+.formPageInner {
+    padding: 15px 70px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.userdetails {
+    margin: 0 auto;
+    margin-top: 80px;
+}
